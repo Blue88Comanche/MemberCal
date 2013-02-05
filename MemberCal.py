@@ -1120,7 +1120,7 @@ if memberanswer is 2:
     #School Teacher        
         if discount_plan is 3:
             print 'Mobile County Public School System discount plan'
-            membership_per = secondary * extra_per + tracher_per
+            membership_per = secondary * extra_per + teacher_per
             multi_fee = secondary * startup_extra + teacher_start
             multi_contract_fee = membership_per * months + multi_fee
             multi_contract = membership_per * months
