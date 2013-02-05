@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.1.1"
+print "membership Calculator v2.1.2"
 ######
 #dont change anything in the date field!!
 ######
@@ -97,7 +97,7 @@ if memberanswer is 1:
         print '0 = City of Mobile'
         print '1 = Mobile County'
         print '2 = State of Alabama'
-        print '3 = School Teacher'
+        print '3 = Mobile County Public School System'
         print '4 = AMR'
         print '5 = Walmart or Sam\'s Club'
         print '6 = Target Corporation'
@@ -201,6 +201,7 @@ if memberanswer is 1:
             months_bal = months - 1 
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\zero enrollment.pdf")
     #10 PERCENT OFF
         if discount_plan is 31:
             single_contract_fee = ten_off * months + startup_1
@@ -238,6 +239,7 @@ if memberanswer is 1:
             months_bal = months - 1 
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\10off.pdf")
     #City of Mobile
         if discount_plan is 0:
             print "City of Mobile discount plan"
@@ -279,7 +281,8 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)    
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\City of Mobile.pdf")
     #Mobile County		
         if discount_plan is 1:
             print 'Mobile County discount plam'
@@ -321,7 +324,8 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)    
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Mobile County.pdf")
     #State of Alabama		
         if discount_plan is 2:
             print 'State of Alabama discount plan'
@@ -362,10 +366,11 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\State of Alabama.pdf")
     #School Teacher        
         if discount_plan is 3:
-            print 'Teacher discount plan'
+            print 'Mobile County Public School System discount plan'
             single_per = teacher_per
             startup_1 = teacher_start
             single_contract_fee = single_per * months + startup_1
@@ -403,7 +408,8 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Mobile County Public School System.pdf")
     #AMR (American Medical Responce)       
         if discount_plan is 4:
             print 'AMR discount plan'
@@ -444,7 +450,8 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\AMR.pdf")
     #Walmart or Sam's Club       
         if discount_plan is 5:
             print 'Walmart or Sam\'s Club discount plan'
@@ -612,7 +619,8 @@ if memberanswer is 1:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Inner Strength Martial Arts.pdf")
     #Clearwater Christian Church        
         if discount_plan is 9:
             print 'Clearwater Christian Church discount plan'
@@ -653,6 +661,7 @@ if memberanswer is 1:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Clearwater Christian Church.pdf")
     #Military
         if discount_plan is 10:
             print "Military discount plan"
@@ -695,6 +704,7 @@ if memberanswer is 1:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Military.pdf")
             #Home Depot       
         if discount_plan is 12:
             print 'Home Depot discount plan'
@@ -780,6 +790,7 @@ if memberanswer is 1:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Pepsi.pdf")
     if discount_ans is 2:
         single_contract_fee = single_per * months + startup_1
         single_contract = single_per * months
@@ -829,7 +840,7 @@ if memberanswer is 2:
         print '0 = City of Mobile'
         print '1 = Mobile County'
         print '2 = State of Alabama'
-        print '3 = School Teacher'
+        print '3 = Mobile County Public School System'
         print '4 = AMR'
         print '5 = Walmart or Sam\'s Club'
         print '6 = Target Corporation'
@@ -900,6 +911,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\zero enrollment.pdf")
     #ten percent off
         if discount_plan is 31:
             membership_per = secondary * ten_off_extra + ten_off
@@ -939,6 +951,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\10off.pdf")
         #no Discount found
         if discount_plan is 32:
             membership_per = secondary * extra_per + single_per
@@ -1019,7 +1032,8 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)    
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\City of Mobile.pdf")
     #Mobile County		
         if discount_plan is 1:
             print 'Mobile County discount plam'
@@ -1060,7 +1074,8 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Mobile County.pdf")
     #State of Alabama		
         if discount_plan is 2:
             print 'State of Alabama discount plan'
@@ -1100,10 +1115,11 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\State of Alabama.pdf")
     #School Teacher        
         if discount_plan is 3:
-            print 'Teacher discount plan'
+            print 'Mobile County Public School System discount plan'
             membership_per = secondary * extra_per + tracher_per
             multi_fee = secondary * startup_extra + teacher_start
             multi_contract_fee = membership_per * months + multi_fee
@@ -1140,7 +1156,8 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Mobile County Public School System.pdf")
     #AMR (American Medical Responce)       
         if discount_plan is 4:
             print 'AMR discount plan'
@@ -1180,7 +1197,8 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\AMR.pdf")
     #Walmart or Sam's Club       
         if discount_plan is 5:
             membership_per = secondary * extra_per + wal_or_sam_per
@@ -1196,6 +1214,7 @@ if memberanswer is 2:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print 'Walmart and Sams Club Discount plan'
             print
             print "Single membership rate is %s dollars per month" % (membership_per)
             print "Total year Membership cost %s dollars" % (multi_contract_fee)
@@ -1277,6 +1296,7 @@ if memberanswer is 2:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print 'Wallgreens discount plan'
             print
             print "Single membership rate is %s dollars per month" % (membership_per)
             print "Total year Membership cost %s dollars" % (multi_contract_fee)
@@ -1341,7 +1361,8 @@ if memberanswer is 2:
             print
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
-            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)   
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Inner Strength Martial Arts.pdf")
     #Clearwater Christian Church        
         if discount_plan is 9:
             print 'Clearwater Christian Church discount plan'
@@ -1382,6 +1403,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Clearwater Christian Church.pdf")
     #military
         if discount_plan is 10:
             print "Military discount plan"
@@ -1423,6 +1445,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Military.pdf")
     #home depot       
         if discount_plan is 12:
             membership_per = secondary * extra_per + home_depot_per
@@ -1438,6 +1461,7 @@ if memberanswer is 2:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print 'Home Depot discount plan'
             print
             print "Single membership rate is %s dollars per month" % (membership_per)
             print "Total year Membership cost %s dollars" % (multi_contract_fee)
@@ -1478,6 +1502,7 @@ if memberanswer is 2:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print 'Pepsi Discount plan'
             print
             print "Single membership rate is %s dollars per month" % (membership_per)
             print "Total year Membership cost %s dollars" % (multi_contract_fee)
@@ -1502,6 +1527,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+            os.startfile("flyers\Pepsi.pdf")
     if discount_ans is 2:
         membership_per = secondary * extra_per + single_per
         multi_fee = secondary * startup_extra + startup_1
