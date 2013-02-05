@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.1"
+print "membership Calculator v2.1.1"
 ######
 #dont change anything in the date field!!
 ######
@@ -80,6 +80,9 @@ silver_start = startup_1 * 0
 #Home Depot
 home_depot_per = single_per * .9
 home_depot_start = startup_1 * .5
+#Pepsi
+pepsi_per = single_per * .9
+pepsi_start = startup_1 * .5
 
 ##Start of Program## Dont change anything past this point
 print "How long is the membership (In months, up to 12 months)"
@@ -104,6 +107,7 @@ if memberanswer is 1:
         print '10 =  Military'
         print '11 = Silver Sneakers'
         print '12 = Home Depot'
+        print '13 = Pepsi'
         print
         print '30 = Zero Startup fee Special'
         print '31 = 10 percent off monthly'
@@ -693,7 +697,7 @@ if memberanswer is 1:
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
             #Home Depot       
         if discount_plan is 12:
-            print 'Walmart or Sam\'s Club discount plan'
+            print 'Home Depot discount plan'
             single_per = home_depot_per
             startup_1 = home_depot_start
             tanning = wal_or_sam_tan
@@ -734,6 +738,48 @@ if memberanswer is 1:
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
             os.startfile("flyers\Home Depot.pdf")
+            #pepsi       
+        if discount_plan is 13:
+            print 'Pepsi discount plan'
+            single_per = pepsi_per
+            startup_1 = pepsi_start
+            tanning = wal_or_sam_tan
+            single_contract_fee = single_per * months + startup_1
+            single_contract = single_per * months
+            down_pay = single_per + startup_1
+            bal = single_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (single_per)
+            print "plus a %s dollar start up fee" % (startup_1)
+            print "Total year Membership cost %s dollars" % (single_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (single_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (startup_1)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (single_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
     if discount_ans is 2:
         single_contract_fee = single_per * months + startup_1
         single_contract = single_per * months
@@ -793,6 +839,7 @@ if memberanswer is 2:
         print '10 = Military'
         print '11 = Silver Sneakers'
         print '12 = Home Depot'
+        print '13 = Pepsi'
         print
         print '30 = Zero Startup fee Special'
         print '31 = 10 percent off monthly'
@@ -1376,8 +1423,8 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
-    #Walmart or Sam's Club       
-        if discount_plan is 5:
+    #home depot       
+        if discount_plan is 12:
             membership_per = secondary * extra_per + home_depot_per
             multi_fee = secondary * startup_extra + home_depot_start
             multi_contract_fee = membership_per * months + multi_fee
@@ -1416,6 +1463,45 @@ if memberanswer is 2:
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
             os.startfile("flyers\Home Depot.pdf")
+    #pepsi       
+        if discount_plan is 13:
+            membership_per = secondary * extra_per + pepsi_per
+            multi_fee = secondary * startup_extra + pepsi_start
+            multi_contract_fee = membership_per * months + multi_fee
+            multi_contract = membership_per * months
+            down_pay = membership_per + multi_fee
+            bal = multi_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (membership_per)
+            print "Total year Membership cost %s dollars" % (multi_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (multi_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (multi_fee)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (multi_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
     if discount_ans is 2:
         membership_per = secondary * extra_per + single_per
         multi_fee = secondary * startup_extra + startup_1
