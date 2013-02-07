@@ -11,6 +11,7 @@ print '3 = Equipment and Facility'
 print '4 = Guest Regeister'
 print '5 = Guest Pass'
 print '6 = Cancelation Form'
+print '7 = Fax Cover Sheet'
 form = input()
 if form is 1:
     os.startfile("forms\TANNING AGREEMENT.docx")
@@ -24,3 +25,5 @@ if form is 5:
     os.startfile("forms\Guest Pass.docx")
 if form is 6:
     os.startfile("forms\Cancelation document.docx")
+if form is 7:
+    os.startfile("forms\Fax Cover Sheet.docx")
