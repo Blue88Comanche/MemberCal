@@ -1,4 +1,4 @@
-print 'Form Finder V1.0.1'
+print 'Form Finder V1.0.2'
 #
 import os
 #
@@ -13,6 +13,7 @@ print '5 = Guest Regeister'
 print '6 = Guest Pass'
 print '7 = Cancelation Form'
 print '8 = Fax Cover Sheet'
+print '9 = General cleaning check list'
 print
 print
 print '20 = Everything for a new member'
@@ -34,6 +35,8 @@ if form is 7:
     os.startfile("forms\Cancelation document.docx")
 if form is 8:
     os.startfile("forms\Fax Cover Sheet.docx")
+if form is 9:
+    os.srartfile("forms\General cleaning check list.docx")
 if form is 20:
     os.startfile("forms\TANNING AGREEMENT.docx")
     os.startfile("forms\Important Notice Regarding Key Usage.doc")
