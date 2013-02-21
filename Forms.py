@@ -41,13 +41,14 @@ if form is 7:
 if form is 8:
     os.startfile("forms\Fax Cover Sheet.docx")
 if form is 9:
-    os.srartfile("forms\General cleaning check list.docx")
+    os.startfile("forms\General cleaning check list.docx")
 if form is 10:
-    os.srartfile("forms\Deposit Receipt.docx")
+    os.startfile("forms\Deposit Receipt.docx")
 if form is 11:
-    os.srartfile("forms\Payment Envelopes Airport.docx")
+    os.startfile("forms\Payment Envelopes Airport.docx")
 if form is 12:
-    os.srartfile("forms\Payment Envelopes Hillcrest.docx")
+    os.startfile("forms\Payment Envelopes Hillcrest.docx")
+
 if form is 20:
     os.startfile("forms\TANNING AGREEMENT.docx")
     os.startfile("forms\Important Notice Regarding Key Usage.doc")
