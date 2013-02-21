@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.1.2"
+print "membership Calculator v2.1.3"
 ######
 #dont change anything in the date field!!
 ######
@@ -87,6 +87,11 @@ pepsi_start = startup_1 * .5
 ##Start of Program## Dont change anything past this point
 print "How long is the membership (In months, up to 12 months)"
 months = input ()
+if months > 12.1:
+    months = 12
+    print
+    print 'Max membership length is 12 months'
+    print
 print "Is this a single membership or family? 1 = Single / 2 = Family"
 memberanswer = input ()
 if memberanswer is 1:
