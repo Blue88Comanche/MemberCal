@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.1.3"
+print "membership Calculator v2.2.1"
 ######
 #dont change anything in the date field!!
 ######
@@ -92,7 +92,11 @@ if months > 12.1:
     print
     print 'Max membership length is 12 months'
     print
-print "Is this a single membership or family? 1 = Single / 2 = Family"
+print 'What type of membership?'
+print '1 = Single'
+print '2 = Family or Multi'
+print
+print '3 = Corporate Rate Builder'
 memberanswer = input ()
 if memberanswer is 1:
     print 'Does this member get a discount? 1 = yes / 2 = no'
@@ -1572,4 +1576,87 @@ if memberanswer is 2:
         months_bal = months - 1
         print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
         print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+if memberanswer is 3:
+    print 'Corporate rate builder V1.0.1'
+    print
+    print 'How many members?'
+    members = input()
+    print
+    print 'Will the keys be discounted?'
+    print '1 = Yes, 10% off'
+    print '2 = Yes, 20% off'
+    print '3 = Yes, 30% off'
+    print '4 = Yes, 40% off'
+    print '5 = Yes, 50% off'
+    print '6 = Yes, Free Keys'
+    print '7 = No, normal rate'
+    key_discount = input()
+    if key_discount is 1:
+        mbr_key_discount = 15 * .9
+    if key_discount is 2:
+        mbr_key_discount = 15 * .8
+    if key_discount is 3:
+        mbr_key_discount = 15 * .7
+    if key_discount is 4:
+        mbr_key_discount = 15 * .6
+    if key_discount is 5:
+        mbr_key_discount = 15 * .5
+    if key_discount is 6:
+        mbr_key_discount = 0
+    if key_discount is 7:
+        mbr_key_discount = 15
+    print
+    print 'what is the discount rate?'
+    print '1 = 5%'
+    print '2 = 10%'
+    print '3 = 15%'
+    print '4 = No Discount per person'
+    discount = input()
+    if discount is 1:
+        mbr_discount = 35 * .95
+    if discount is 2:
+        mbr_discount = 35 * .9
+    if discount is 3:
+        mbr_discount = 35 * .85
+    if discount is 4:
+        mbr_discount = 35
+    print
+    membership_per = members * mbr_discount
+    multi_fee = mbr_key_discount * members
+    multi_contract_fee = membership_per * months + multi_fee
+    multi_contract = membership_per * months
+    down_pay = membership_per + multi_fee
+    bal = multi_contract_fee - down_pay
+    fu_month =  current_month + months
+    if fu_month < 12:
+        date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+    if fu_month > 12:
+        new_month = fu_month - 12
+        fu_year = current_year + 1
+        date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+    print
+    print "Membership rate is %s per month" % (membership_per)
+    print "plus a %s start up fee" % (multi_fee)
+    print "Total Membership cost %s dollars with %s member(s)" % (multi_contract_fee,members)
+    print
+    print
+    #Contract fillout cheat sheet
+    print "Contract Fill-out Cheat sheet"
+    print
+    print "start membership"
+    print date
+    print "end membership"
+    print date_end
+    print
+    print "Membership --------- %s" % (multi_contract)
+    print "Tanning ------------ %s" % (tanning)
+    print "Processing Fee ----- %s" % (multi_fee)
+    print "Anytime Health ----- %s" % (anytime_health)
+    print "Total -------------- %s" % (multi_contract_fee)
+    print "Downpaymnt --------- %s" % (down_pay)
+    print "Remaining Balance -- %s" % (bal)
+    print
+    months_bal = months - 1
+    print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
+    print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
 raw_input ("press enter to close window")
