@@ -83,6 +83,9 @@ home_depot_start = startup_1 * .5
 #Pepsi
 pepsi_per = single_per * .9
 pepsi_start = startup_1 * .5
+#Student
+student = single_per * .9
+student_fee = startup_1 * .5
 
 ##Start of Program## Dont change anything past this point
 print "How long is the membership (In months, up to 12 months)"
@@ -117,6 +120,7 @@ if memberanswer is 1:
         print '11 = Silver Sneakers'
         print '12 = Home Depot'
         print '13 = Pepsi'
+        print '14 = Student'
         print
         print '30 = Zero Startup fee Special'
         print '31 = 10 percent off monthly'
@@ -248,7 +252,44 @@ if memberanswer is 1:
             months_bal = months - 1 
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
-            os.startfile("flyers\10off.pdf")
+            #os.startfile("flyers\tenoff.pdf")
+        #Student
+        if discount_plan is 14:
+            single_contract_fee = student * months + startup_1
+            single_contract = student * months
+            down_pay = student + student_fee
+            bal = single_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (ten_off)
+            print "Total year Membership cost %s dollars" % (single_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (single_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (student_fee)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (single_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1 
+            print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
     #City of Mobile
         if discount_plan is 0:
             print "City of Mobile discount plan"
@@ -960,7 +1001,7 @@ if memberanswer is 2:
             months_bal = months - 1
             print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
-            os.startfile("flyers\10off.pdf")
+            #os.startfile("flyers\10off.pdf")
         #no Discount found
         if discount_plan is 32:
             membership_per = secondary * extra_per + single_per
