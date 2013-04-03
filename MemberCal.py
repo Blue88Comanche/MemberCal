@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.2.3"
+print "membership Calculator v2.2.4"
 ######
 #dont change anything in the date field!!
 ######
@@ -89,7 +89,14 @@ student_fee = startup_1 * .5
 #Coca-Cola
 coca_cola = single_per * .9
 coca_cola_fee = startup_1 * .5
-
+#Delta
+delta = single_per * .9
+#Kohl's
+kohls = single_per * .9
+kohls_start = startup_1 * .5
+#Unitedhealth Allies
+unitedhealth = single_per * .9
+unitedhealth_start = startup_1 * .5
 ##Start of Program## Dont change anything past this point
 print "How long is the membership (In months, up to 12 months)"
 months = input ()
@@ -125,6 +132,9 @@ if memberanswer is 1:
         print '13 = Pepsi'
         print '14 = Student'
         print '15 = Coca-Cola'
+        print '16 = Delta'
+        print '17 = Kohl\'s'
+        print '18 = Unitedhealth Allies'
         print
         print '30 = Zero Startup fee Special'
         print '31 = 10 percent off monthly'
@@ -142,6 +152,55 @@ if memberanswer is 1:
             print 'out all the paper work, and we get a copy'
             print 'of their drivers license and their Silver'
             print 'sneakers card.'
+    #Unitedhealth Allies
+        if discount_plan is 18:
+            single_per = unitedhealth
+            startup_1 = unitedhealth_start
+            single_contract_fee = single_per * months + startup_1
+            single_contract = single_per * months
+            down_pay = single_per + startup_1
+            bal = single_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print 'Unitedhealth Allies requires all members to have direct draft'
+            print 'from their checking account'
+            print
+            print 'Enter as a new contract in Club Hub'
+            print
+            print 'Enter their information to the Healthy Contributions\' webpage'
+            print 'DO NOT put this membership into ABC'
+            print
+            raw_input('press any key to continue to membership rates')
+            print
+            print "Single membership rate is %s dollars per month" % (single_per)
+            print "Total year Membership cost %s dollars" % (single_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (single_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (startup_1)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (single_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1 
+            print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing) 
     #no discount found
         if discount_plan is 32:
             single_contract_fee = single_per * months + startup_1
@@ -179,6 +238,86 @@ if memberanswer is 1:
             months_bal = months - 1 
             print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
             print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+    #Delta
+        if discount_plan is 16:
+            single_per = delta
+            single_contract_fee = single_per * months + startup_1
+            single_contract = single_per * months
+            down_pay = single_per + startup_1
+            bal = single_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (single_per)
+            print "Total year Membership cost %s dollars" % (single_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (single_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (startup_1)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (single_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1 
+            print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+    #Kohl's
+        if discount_plan is 17:
+            print "Kohl\'s Discount"
+            print
+            single_per = kohls
+            startup_1 = kohls_start
+            single_contract_fee = single_per * months + startup_1
+            single_contract = single_per * months
+            down_pay = single_per + startup_1
+            bal = single_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (single_per)
+            print "plus a %s dollar start up fee" % (startup_1)
+            print "Total year Membership cost %s dollars" % (single_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (single_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (startup_1)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (single_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (single_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)            
     #Zero Start
         if discount_plan is 30:
             startup_1 = zero_start
@@ -221,6 +360,7 @@ if memberanswer is 1:
             os.startfile("flyers\zero enrollment.pdf")
     #10 PERCENT OFF
         if discount_plan is 31:
+            single_per = ten_off
             single_contract_fee = ten_off * months + startup_1
             single_contract = ten_off * months
             down_pay = ten_off + startup_1
@@ -233,7 +373,7 @@ if memberanswer is 1:
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
             print
-            print "Single membership rate is %s dollars per month" % (ten_off)
+            print "Single membership rate is %s dollars per month" % (single_per)
             print "Total year Membership cost %s dollars" % (single_contract_fee)
             print
             print
@@ -259,6 +399,7 @@ if memberanswer is 1:
             #os.startfile("flyers\tenoff.pdf")
         #Student
         if discount_plan is 14:
+            single_per = student
             single_contract_fee = student * months + startup_1
             single_contract = student * months
             down_pay = student + student_fee
@@ -271,7 +412,7 @@ if memberanswer is 1:
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
             print
-            print "Single membership rate is %s dollars per month" % (ten_off)
+            print "Single membership rate is %s dollars per month" % (single_per)
             print "Total year Membership cost %s dollars" % (single_contract_fee)
             print
             print
@@ -950,6 +1091,9 @@ if memberanswer is 2:
         print '13 = Pepsi'
         print '14 = Student'
         print '15 = Coca-Cola'
+        print '16 = Delta'
+        print '17 = Kohl\'s'
+        print '18 = Unitedhealth Allies'
         print
         print '30 = Zero Startup fee Special'
         print '31 = 10 percent off monthly'
@@ -972,6 +1116,142 @@ if memberanswer is 2:
             print 'members.  If the secondary members want to'
             print 'join then they will need to be on their own'
             print 'membership'
+    #Unitedhealth Allies
+        if discount_plan is 18:
+            print "Unitedhealth Allies discount plan"
+            print
+            membership_per = secondary * extra_per + unitedhealth
+            multi_fee = secondary * startup_extra + unitedhealth_start
+            multi_contract_fee = membership_per * months + multi_fee
+            multi_contract = membership_per * months
+            down_pay = membership_per + multi_fee
+            bal = multi_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print 'Unitedhealth Allies requires all members to have direct draft'
+            print 'from their checking account'
+            print
+            print 'Enter as a new contract in Club Hub'
+            print
+            print 'Enter their information to the Healthy Contributions\' webpage'
+            print 'DO NOT put this membership into ABC'
+            print
+            raw_input('press any key to continue to membership rates')
+            print
+            print
+            print "Single membership rate is %s dollars per month" % (membership_per)
+            print "Total year Membership cost %s dollars" % (multi_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (multi_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (multi_fee)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (multi_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+
+
+    #Delta
+        if discount_plan is 16:
+            print "Delta discount plan"
+            print
+            membership_per = secondary * extra_per + delta
+            multi_fee = secondary * startup_extra + startup_1
+            multi_contract_fee = membership_per * months + multi_fee
+            multi_contract = membership_per * months
+            down_pay = membership_per + multi_fee
+            bal = multi_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (membership_per)
+            print "Total year Membership cost %s dollars" % (multi_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (multi_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (multi_fee)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (multi_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
+    #Kohl's
+        if discount_plan is 17:
+            print "Kohl\'s discount plan"
+            print
+            membership_per = secondary * extra_per + kohls
+            multi_fee = secondary * startup_extra + kohls_start
+            multi_contract_fee = membership_per * months + multi_fee
+            multi_contract = membership_per * months
+            down_pay = membership_per + multi_fee
+            bal = multi_contract_fee - down_pay
+            fu_month =  current_month + months
+            if fu_month < 12:
+                date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
+            if fu_month > 12:
+                new_month = fu_month - 12
+                fu_year = current_year + 1
+                date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
+            print
+            print "Single membership rate is %s dollars per month" % (membership_per)
+            print "Total year Membership cost %s dollars" % (multi_contract_fee)
+            print
+            print
+            #Contract fillout cheat sheet
+            print "Contract Cheat sheet"
+            print
+            print "start membership"
+            print date
+            print "end membership"
+            print date_end
+            print
+            print "Membership --------- %s" % (multi_contract)
+            print "Tanning ------------ %s" % (tanning)
+            print "Processing Fee ----- %s" % (multi_fee)
+            print "Anytime Health ----- %s" % (anytime_health)
+            print "Total -------------- %s" % (multi_contract_fee)
+            print "Downpaymnt --------- %s" % (down_pay)
+            print "Remaining Balance -- %s" % (bal)
+            print
+            months_bal = months - 1
+            print "Payment Plan (membership dues): %s Dollars Per month" % (membership_per)
+            print "For %s Consecutive Months beginning %s" % (months_bal,start_billing)
     #Zero Start
         if discount_plan is 30:
             multi_fee = secondary * zero_start_extra + zero_start
