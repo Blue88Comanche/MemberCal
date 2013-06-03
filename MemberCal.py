@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v2.2.4"
+print "membership Calculator v2.2.5"
 ######
 #dont change anything in the date field!!
 ######
