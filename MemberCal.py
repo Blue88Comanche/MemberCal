@@ -1041,7 +1041,6 @@ if memberanswer is 1:
             new_month = fu_month - 12
             fu_year = current_year + 1
             date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
-        print "Does this membership get discount? 1 = yes / 2 = no"
         print
         print "Single membership rate is %s dollars per month" % (single_per)
         print "plus a %s dollar start up fee" % (startup_1)
