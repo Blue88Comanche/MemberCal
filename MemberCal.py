@@ -161,9 +161,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -208,9 +208,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -246,9 +246,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -287,9 +287,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -327,9 +327,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -366,9 +366,9 @@ if memberanswer is 1:
             down_pay = ten_off + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -405,9 +405,9 @@ if memberanswer is 1:
             down_pay = student + student_fee
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -446,9 +446,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -489,9 +489,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -531,9 +531,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -573,9 +573,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -615,9 +615,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -658,9 +658,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -701,9 +701,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -743,9 +743,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -784,9 +784,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay 
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -825,9 +825,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -868,9 +868,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -911,9 +911,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -954,9 +954,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -996,9 +996,9 @@ if memberanswer is 1:
             down_pay = single_per + startup_1
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1035,9 +1035,9 @@ if memberanswer is 1:
         down_pay = single_per + startup_1
         bal = single_contract_fee - down_pay
         fu_month =  current_month + months
-        if fu_month < 12:
+        if fu_month <= 12:
             date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-        if fu_month > 12:
+        if fu_month >= 13:
             new_month = fu_month - 12
             fu_year = current_year + 1
             date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1126,9 +1126,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1180,9 +1180,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1221,9 +1221,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1259,9 +1259,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1299,9 +1299,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1339,9 +1339,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1381,9 +1381,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1423,9 +1423,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1464,9 +1464,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1505,9 +1505,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1546,9 +1546,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1586,9 +1586,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1628,9 +1628,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1668,9 +1668,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1710,9 +1710,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1751,9 +1751,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1793,9 +1793,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1833,9 +1833,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1874,9 +1874,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1915,9 +1915,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1956,9 +1956,9 @@ if memberanswer is 2:
             down_pay = membership_per + multi_fee
             bal = multi_contract_fee - down_pay
             fu_month =  current_month + months
-            if fu_month < 12:
+            if fu_month <= 12:
                 date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-            if fu_month > 12:
+            if fu_month >= 13:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -1996,9 +1996,9 @@ if memberanswer is 2:
         down_pay = membership_per + multi_fee
         bal = multi_contract_fee - down_pay
         fu_month =  current_month + months
-        if fu_month < 12:
+        if fu_month <= 12:
             date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-        if fu_month > 12:
+        if fu_month >= 13:
             new_month = fu_month - 12
             fu_year = current_year + 1
             date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
@@ -2079,9 +2079,9 @@ if memberanswer is 3:
     down_pay = membership_per + multi_fee
     bal = multi_contract_fee - down_pay
     fu_month =  current_month + months
-    if fu_month < 12:
+    if fu_month <= 12:
         date_end = str(fu_month) + '/' + str(current_day) + '/' + str(current_year)
-    if fu_month > 12:
+    if fu_month >= 13:
         new_month = fu_month - 12
         fu_year = current_year + 1
         date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
