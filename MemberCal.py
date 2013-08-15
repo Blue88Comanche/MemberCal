@@ -399,10 +399,12 @@ if memberanswer is 1:
             #os.startfile("flyers\tenoff.pdf")
         #Student
         if discount_plan is 14:
+            print "student Discount"
+            print
             single_per = student
-            single_contract_fee = student * months + startup_1
-            single_contract = student * months
-            down_pay = student + student_fee
+            single_contract_fee = single_per * months + student_fee
+            single_contract = single_per * months
+            down_pay = single_per + student_fee
             bal = single_contract_fee - down_pay
             fu_month =  current_month + months
             if fu_month <= 12:
@@ -1949,6 +1951,8 @@ if memberanswer is 2:
             #os.startfile("flyers\Pepsi.pdf")
     #Student     
         if discount_plan is 14:
+            print "Student Discount"
+            print
             membership_per = secondary * extra_per + student
             multi_fee = secondary * startup_extra + student_fee
             multi_contract_fee = membership_per * months + multi_fee
@@ -1962,7 +1966,6 @@ if memberanswer is 2:
                 new_month = fu_month - 12
                 fu_year = current_year + 1
                 date_end = str(new_month) + '/' + str(current_day) + '/' + str(fu_year)
-            print 'student Discount plan'
             print
             print "Single membership rate is %s dollars per month" % (membership_per)
             print "Total year Membership cost %s dollars" % (multi_contract_fee)
