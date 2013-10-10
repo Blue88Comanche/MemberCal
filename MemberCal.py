@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v3.0.0"
+print "membership Calculator v3.0.1"
 print
 import os
 ######
@@ -158,7 +158,6 @@ while True:
 	print "plus a %s dollar start up fee" % (fee)
 	print "Total year Membership cost %s dollars" % (total)
 	print
-	print
 	#Contract fillout cheat sheet
 	print "Contract Cheat Sheet:"
 	print
@@ -182,8 +181,7 @@ while True:
 	## Apply Discount if listed ##
 	print
 	print 'Does this membership apply for a discount?'
-	print '1 = yes'
-	print '2 = no'
+	print '1 = yes / 2 = no'
 	ans = input()
 	os.system('CLS')
 	if ans is 1:
@@ -374,7 +372,6 @@ while True:
 			print "plus a %s dollar start up fee" % (fee)
 			print "Total year Membership cost %s dollars" % (total)
 			print
-			print 
 			#Contract fillout cheat sheet
 			print "Contract Cheat Sheet:"
 			print
