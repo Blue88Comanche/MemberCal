@@ -1,6 +1,6 @@
 #this program is not for resale
 #Membership Calculator written By Jeffrey Enfinger
-print "membership Calculator v3.0.1"
+print "membership Calculator v3.0.3"
 print
 import os
 ######
@@ -20,9 +20,13 @@ if next_month >= 13:
 	next_month = next_month - 12
 	next_year = next_year +1
 start_billing = str(next_month) + '/' + str(current_day) + '/' + str(next_year)
+###########
+## lists ##
+correct = ['yes', 'Yes', 'YEs', 'YES', 'yES', 'yeS', 'y', 'Y', '1',];
+discount_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 31, 32, 35,];
 while True:
 	##########################################
-	## Membership Info                      ##
+	## Membership Info						##
 	## Edit this to change membership rates ##
 	##########################################
 	# Primary member rate
@@ -181,10 +185,10 @@ while True:
 	## Apply Discount if listed ##
 	print
 	print 'Does this membership apply for a discount?'
-	print '1 = yes / 2 = no'
-	ans = input()
+	print 'yes or no'
+	ans = raw_input()
 	os.system('CLS')
-	if ans is 1:
+	if ans in correct:
 		print 'What company does the member work for?'
 		print '0 = City of Mobile'
 		print '1 = Mobile County'
@@ -211,7 +215,7 @@ while True:
 		#print '32 = Anytime Fitness Special'
 		print
 		print '35 = Not listed'	
-		discount_plan = input()	
+		discount_plan = input()
 		#########################
 		##Discounts start here ##
 		#City of Mobile
@@ -321,7 +325,7 @@ while True:
 			single_per = ten_off
 			extra = ten_off_extra	
 		###################
-		## End Discounts ##	
+		## End Discounts ##
 		if members is 1:
 			os.system('CLS')
 			contract = single_per * term
@@ -391,5 +395,5 @@ while True:
 		raw_input ("press enter to restart")
 		os.system('CLS')
 	else:
-		os.system('CLS')		
+		os.system('CLS')
 	##### end #####
