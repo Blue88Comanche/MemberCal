@@ -20,6 +20,7 @@ print '10 = Deposit Receipt'
 print '11 = Payment Envelopes Airport'
 print '12 = Payment Envelopes Hillcrest'
 print
+print '15 = Contract'
 print
 print '20 = Everything for a new member'
 
@@ -48,6 +49,8 @@ if form is 11:
     os.startfile("forms\Payment Envelopes Airport.pdf")
 if form is 12:
     os.startfile("forms\Payment Envelopes Hillcrest.pdf")
+if form is 15:
+    os.startfile("forms\Contract.pdf")
 
 if form is 20:
     os.startfile("forms\TANNING AGREEMENT.pdf")
