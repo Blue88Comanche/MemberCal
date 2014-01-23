@@ -25,33 +25,33 @@ print '20 = Everything for a new member'
 
 form = input()
 if form is 1:
-    os.startfile("forms\TANNING AGREEMENT.docx")
+    os.startfile("forms\TANNING AGREEMENT.pdf")
 if form is 2:
-    os.startfile("forms\Important Notice Regarding Key Usage.doc")
+    os.startfile("forms\Important Notice Regarding Key Usage.pdf")
 if form is 3:
     os.startfile("forms\AF Equipment and Facilities Policies.pdf")
 if form is 4:
-    os.startfile("forms\SAFETY NOTICES.docx")
+    os.startfile("forms\SAFETY NOTICES.pdf")
 if form is 5:
     os.startfile("forms\Guest_Register.pdf")
 if form is 6:
-    os.startfile("forms\Guest Pass.docx")
+    os.startfile("forms\Guest Pass.pdf")
 if form is 7:
-    os.startfile("forms\Cancelation document.docx")
+    os.startfile("forms\Cancelation document.pdf")
 if form is 8:
-    os.startfile("forms\Fax Cover Sheet.docx")
+    os.startfile("forms\Fax Cover Sheet.pdf")
 if form is 9:
-    os.startfile("forms\General cleaning check list.docx")
+    os.startfile("forms\General cleaning check list.pdf")
 if form is 10:
-    os.startfile("forms\Deposit Receipt.docx")
+    os.startfile("forms\Deposit Receipt.pdf")
 if form is 11:
-    os.startfile("forms\Payment Envelopes Airport.docx")
+    os.startfile("forms\Payment Envelopes Airport.pdf")
 if form is 12:
-    os.startfile("forms\Payment Envelopes Hillcrest.docx")
+    os.startfile("forms\Payment Envelopes Hillcrest.pdf")
 
 if form is 20:
-    os.startfile("forms\TANNING AGREEMENT.docx")
-    os.startfile("forms\Important Notice Regarding Key Usage.doc")
+    os.startfile("forms\TANNING AGREEMENT.pdf")
+    os.startfile("forms\Important Notice Regarding Key Usage.pdf")
     os.startfile("forms\AF Equipment and Facilities Policies.pdf")
-    os.startfile("forms\SAFETY NOTICES.docx")
+    os.startfile("forms\SAFETY NOTICES.pdf")
     
