@@ -9,7 +9,7 @@ extra = 20
 # Primary start up fee
 startup_1 = 15
 # Secondary start up fee
-startup_extra = 5
+startup_extra = 7.50
 # Tanning rate # not used
 tanning = 0
 # Anytume Health fee # not used
